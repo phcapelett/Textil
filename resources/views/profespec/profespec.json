@@ -1,0 +1,51 @@
+{
+	"titulo":"profespec",
+	"tablename":"n",
+	"classe":"Profespec",
+	"colunas":[
+		{"nome":"id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false},
+		{"nome":"especialidades_id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false},
+		{"nome":"profissionais_id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false}
+	],
+	"campos": [
+	{
+		"coluna":12,
+		"id":"id",
+		"type":"hidden",
+		"placeholder":"id",
+		"label":"id"
+	}	,{
+		"coluna":12,
+		"id":"especialidades_id",
+		"type":"query",
+		"placeholder":"especialidades_id",
+		"label":"especialidades_id",
+		"table":"",
+		"classe":"Especialidade",
+		"validation":{
+			"required":true
+		},
+		"fields":{
+			"id":"id",
+			"label":"codigo"
+		}
+	}
+	,{
+		"coluna":12,
+		"id":"profissionais_id",
+		"type":"query",
+		"placeholder":"profissionais_id",
+		"label":"profissionais_id",
+		"table":"",
+		"classe":"Profissionais",
+		"validation":{
+			"required":true
+		},
+		"fields":{
+			"id":"id",
+			"label":"nome"
+		}
+	}
+
+	]
+}

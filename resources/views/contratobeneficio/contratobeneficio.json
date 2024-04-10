@@ -1,0 +1,51 @@
+{
+	"titulo":"contratobeneficio",
+	"tablename":"n",
+	"classe":"Contratobeneficio",
+	"colunas":[
+		{"nome":"id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false},
+		{"nome":"contratos_id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false},
+		{"nome":"beneficios_id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false}
+	],
+	"campos": [
+	{
+		"coluna":12,
+		"id":"id",
+		"type":"hidden",
+		"placeholder":"id",
+		"label":"id"
+	}	,{
+		"coluna":12,
+		"id":"contratos_id",
+		"type":"query",
+		"placeholder":"contratos_id",
+		"label":"contratos_id",
+		"table":"",
+		"classe":"Contrato",
+		"validation":{
+			"required":true
+		},
+		"fields":{
+			"id":"id",
+			"label":"funcionarioempresa_id"
+		}
+	}
+	,{
+		"coluna":12,
+		"id":"beneficios_id",
+		"type":"query",
+		"placeholder":"beneficios_id",
+		"label":"beneficios_id",
+		"table":"",
+		"classe":"Beneficio",
+		"validation":{
+			"required":true
+		},
+		"fields":{
+			"id":"id",
+			"label":"descricao"
+		}
+	}
+
+	]
+}

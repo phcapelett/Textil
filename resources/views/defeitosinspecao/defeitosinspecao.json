@@ -1,0 +1,58 @@
+{
+	"titulo":"defeitosinspecao",
+	"tablename":"n",
+	"classe":"Defeitosinspecao",
+	"colunas":[
+		{"nome":"id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false},
+		{"nome":"inspecaopuma_id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false},
+		{"nome":"inspecaodefeito_id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false},
+		{"nome":"inspecaodefeito_grupodefeito_id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false}
+	],
+	"campos": [
+	{
+		"coluna":12,
+		"id":"id",
+		"type":"hidden",
+		"placeholder":"id",
+		"label":"id"
+	}	,{
+		"coluna":12,
+		"id":"inspecaopuma_id",
+		"type":"query",
+		"placeholder":"inspecaopuma_id",
+		"label":"inspecaopuma_id",
+		"table":"",
+		"classe":"Inspecaopuma",
+		"validation":{
+			"required":true
+		},
+		"fields":{
+			"id":"id",
+			"label":"acaotomada"
+		}
+	}
+,
+	{
+		"coluna":12,
+		"id":"inspecaodefeito_id",
+		"type":"text",
+		"placeholder":"inspecaodefeito_id",
+		"label":"inspecaodefeito_id",
+		"validation":{
+			"type":"number",
+			"required":true
+		}
+	},
+	{
+		"coluna":12,
+		"id":"inspecaodefeito_grupodefeito_id",
+		"type":"text",
+		"placeholder":"inspecaodefeito_grupodefeito_id",
+		"label":"inspecaodefeito_grupodefeito_id",
+		"validation":{
+			"type":"number",
+			"required":true
+		}
+	}
+	]
+}

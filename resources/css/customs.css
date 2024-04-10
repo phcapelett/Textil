@@ -1,0 +1,14 @@
+.bi-text-left{
+    color: black;
+    cursor: pointer;
+    font-size: 30px!important;
+}
+
+/* Estilos para o conteúdo da página */
+.home-container {
+    padding: 20px; /* Adiciona algum espaçamento */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    /*min-height: 100vh;  Garante que ocupe toda a altura da tela */
+}

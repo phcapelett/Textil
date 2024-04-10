@@ -1,0 +1,30 @@
+{
+	"titulo":"permissionstype",
+	"tablename":"n",
+	"classe":"Permissionstype",
+	"colunas":[
+		{"nome":"id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false},
+		{"nome":"nome","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false}
+	],
+	"campos": [
+	{
+		"coluna":12,
+		"id":"id",
+		"type":"hidden",
+		"placeholder":"id",
+		"label":"id"
+	},
+	{
+		"coluna":12,
+		"id":"nome",
+		"type":"text",
+		"placeholder":"nome",
+		"label":"nome",
+		"validation":{
+			"type":"string",
+			"required":true,
+			"maxlength":"45"
+		}
+	}
+	]
+}

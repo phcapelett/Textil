@@ -1,0 +1,51 @@
+{
+	"titulo":"epifuncao",
+	"tablename":"n",
+	"classe":"Epifuncao",
+	"colunas":[
+		{"nome":"id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false},
+		{"nome":"funcao_id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false},
+		{"nome":"epi_id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false}
+	],
+	"campos": [
+	{
+		"coluna":12,
+		"id":"id",
+		"type":"hidden",
+		"placeholder":"id",
+		"label":"id"
+	}	,{
+		"coluna":12,
+		"id":"funcao_id",
+		"type":"query",
+		"placeholder":"funcao_id",
+		"label":"funcao_id",
+		"table":"",
+		"classe":"Funcao",
+		"validation":{
+			"required":true
+		},
+		"fields":{
+			"id":"id",
+			"label":"descricao"
+		}
+	}
+	,{
+		"coluna":12,
+		"id":"epi_id",
+		"type":"query",
+		"placeholder":"epi_id",
+		"label":"epi_id",
+		"table":"",
+		"classe":"Epi",
+		"validation":{
+			"required":true
+		},
+		"fields":{
+			"id":"id",
+			"label":"descricao"
+		}
+	}
+
+	]
+}

@@ -1,0 +1,51 @@
+{
+	"titulo":"roleusuario",
+	"tablename":"n",
+	"classe":"Roleusuario",
+	"colunas":[
+		{"nome":"id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false},
+		{"nome":"roles_id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false},
+		{"nome":"usuarios_id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false}
+	],
+	"campos": [
+	{
+		"coluna":12,
+		"id":"id",
+		"type":"hidden",
+		"placeholder":"id",
+		"label":"id"
+	}	,{
+		"coluna":12,
+		"id":"roles_id",
+		"type":"query",
+		"placeholder":"roles_id",
+		"label":"roles_id",
+		"table":"",
+		"classe":"Role",
+		"validation":{
+			"required":true
+		},
+		"fields":{
+			"id":"id",
+			"label":"empresas_id"
+		}
+	}
+	,{
+		"coluna":12,
+		"id":"usuarios_id",
+		"type":"query",
+		"placeholder":"usuarios_id",
+		"label":"usuarios_id",
+		"table":"",
+		"classe":"Usuario",
+		"validation":{
+			"required":true
+		},
+		"fields":{
+			"id":"id",
+			"label":"nome"
+		}
+	}
+
+	]
+}

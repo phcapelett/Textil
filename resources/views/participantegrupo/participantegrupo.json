@@ -1,0 +1,51 @@
+{
+	"titulo":"participantegrupo",
+	"tablename":"n",
+	"classe":"Participantegrupo",
+	"colunas":[
+		{"nome":"id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false},
+		{"nome":"grupoproducao_id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false},
+		{"nome":"funcionarioempresa_id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false}
+	],
+	"campos": [
+	{
+		"coluna":12,
+		"id":"id",
+		"type":"hidden",
+		"placeholder":"id",
+		"label":"id"
+	}	,{
+		"coluna":12,
+		"id":"grupoproducao_id",
+		"type":"query",
+		"placeholder":"grupoproducao_id",
+		"label":"grupoproducao_id",
+		"table":"",
+		"classe":"Grupoproducao",
+		"validation":{
+			"required":true
+		},
+		"fields":{
+			"id":"id",
+			"label":"descricao"
+		}
+	}
+	,{
+		"coluna":12,
+		"id":"funcionarioempresa_id",
+		"type":"query",
+		"placeholder":"funcionarioempresa_id",
+		"label":"funcionarioempresa_id",
+		"table":"",
+		"classe":"Funcionarioempresa",
+		"validation":{
+			"required":true
+		},
+		"fields":{
+			"id":"id",
+			"label":"descricao"
+		}
+	}
+
+	]
+}

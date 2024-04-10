@@ -1,0 +1,85 @@
+$offcanvas-padding-y: 5px;
+$offcanvas-padding-x: 5px;
+$offcanvas-horizontal-width: 250px !important;
+$body-bg-color: linear-gradient(270deg, #1c7cfa82, #1c7cfa0d);
+$border-color-translucent: transparent;
+$card-cap-bg: #5a95e1;
+$modal-footer-bg: #e1e1e14f;
+
+$nav-link-hover-color: #0a0a0a;
+$nav-link-hover-background-color: linear-gradient(90deg, #1c7cfa, #1c7cfa00);
+$nav-link-border-radius: 0.357rem;
+
+.nav-link:hover, .nav-link:focus {
+    background-image: $nav-link-hover-background-color;
+    border-radius: $nav-link-border-radius;
+}
+
+// CUSTOM RODAPÉ DO USUARIO NO MENU VERTICAL
+.offcanvas-footer { 
+    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.fs-7 {
+    font-size: 0.75rem !important;
+}
+.offcanvas-footer .user-email {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-direction: column;
+    margin-left: 10px;
+}
+// FIM CUSTOM RODAPÉ DO USUARIO NO MENU VERTICAL
+
+.offcanvas, 
+.offcanvas-xxl, 
+.offcanvas-xl, 
+.offcanvas-lg, 
+.offcanvas-md, 
+.offcanvas-sm {
+    background-image: linear-gradient(270deg, #1c7cfa82, #1c7cfa0d);
+}
+.linha-body-user{
+    width: 100%;
+    height: 2px;
+    background-color: #2020202e;
+}
+body {
+    background-image: $body-bg-color !important;
+    background-color: transparent !important;
+}
+.card-custom{
+    box-shadow: 10px 10px 20px black !important;
+}
+.table-radius-bottom-left-right{
+    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+}
+.header-button{
+    box-shadow: 4px 4px 10px black;
+    font-weight: 500 !important;
+}
+.card-header .card-grid{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-header .card-grid .grid-search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.modal-header{
+    background-color: #5a95e1 !important;
+}
+
+

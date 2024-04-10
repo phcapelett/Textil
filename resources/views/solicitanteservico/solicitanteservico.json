@@ -1,0 +1,43 @@
+{
+	"titulo":"solicitanteservico",
+	"tablename":"n",
+	"classe":"Solicitanteservico",
+	"colunas":[
+		{"nome":"id","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false},
+		{"nome":"responsavel","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false},
+		{"nome":"local","show":true,"somatorio":false,"ordena":true,"filtra":true,"date":false,"time":false}
+	],
+	"campos": [
+	{
+		"coluna":12,
+		"id":"id",
+		"type":"hidden",
+		"placeholder":"id",
+		"label":"id"
+	},
+	{
+		"coluna":12,
+		"id":"responsavel",
+		"type":"text",
+		"placeholder":"responsavel",
+		"label":"responsavel",
+		"validation":{
+			"type":"string",
+			"required":true,
+			"maxlength":"45"
+		}
+	},
+	{
+		"coluna":12,
+		"id":"local",
+		"type":"text",
+		"placeholder":"local",
+		"label":"local",
+		"validation":{
+			"type":"string",
+			"required":true,
+			"maxlength":"45"
+		}
+	}
+	]
+}
